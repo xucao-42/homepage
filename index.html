@@ -69,6 +69,40 @@
          
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="input()" onmouseover="output()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='IJCV22'>
+                  <img src='images/IJCV22_normal_map_est_full.jpeg' width="160"></div>
+                <img src='images/IJCV22_no_flash.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function output() {
+                  document.getElementById('IJCV22').style.opacity = "1";
+                }
+
+                function input() {
+                  document.getElementById('IJCV22').style.opacity = "0";
+                }
+                input()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Shape and Albedo Recovery by Your Phone using Stereoscopic Flash and No-Flash Photography</papertitle>
+              <br>
+              <strong>Xu Cao</strong>,
+              <a href="https://sites.google.com/view/mwaechter">Michael Waechter</a>,
+              <a href="http://alumni.media.mit.edu/~shiboxin/">Boxin Shi</a>,
+              Ye Gao,
+              <a href="http://www.bozheng-lab.com">Bo Zheng</a>,
+              <a href="http://cvl.ist.osaka-u.ac.jp/user/okura/">Fumio Okura</a>,
+              <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>
+              <br>
+              <em>IJCV</em>, 2022
+              <br>
+              <a href="https://rdcu.be/cKGfv">PDF</a>
+            </td>
+
           <tr onmouseout="normal()" onmouseover="surface()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -84,7 +118,7 @@
                 function normal() {
                   document.getElementById('normal_integration').style.opacity = "0";
                 }
-                nerfactor_stop()
+                normal()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">

@@ -30,13 +30,13 @@
                 My research interest includes 3D/physics-based vision but excludes deep learning applications.
               </p>
               <p style="text-align:center">
-                <a href="mailto:cao.xu@ist.osaka-u.ac.jp">Email</a> &nbsp/&nbsp
+                <a href="mailto:cao.xu@ist.osaka-u.ac.jp">Email</a> &nbsp|&nbsp
                 <!-- <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp -->
                 <!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
-                <a href="https://scholar.google.com/citations?user=oq19mdMAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=oq19mdMAAAAJ&hl=en">Google Scholar</a> &nbsp|&nbsp
                 <!-- <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp/&nbsp -->
                 <a href="https://github.com/hoshino042">Github</a>
-                /
+                &nbsp|&nbsp
                 <a href="https://www.linkedin.com/in/xu-cao-947605169/">LinkedIn</a>
               </p>
             </td>
@@ -68,6 +68,44 @@
          </table>
          
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <tr onmouseout="eccv2022_o()" onmouseover="eccv2022_i()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='bni'><video  width=105% muted autoplay loop>
+                <source src="images/eccv2022_o.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video></div>
+              <img src='images/eccv2022_i.png' width=100%>
+            </div>
+            <script type="text/javascript">
+                function eccv2022_i() {
+                  document.getElementById('bni').style.opacity = "1";
+                }
+
+                function eccv2022_o() {
+                  document.getElementById('bni').style.opacity = "0";
+                }
+                eccv2022_o()
+              </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Bilateral Normal Integration</papertitle>
+            <br>
+            <strong>Xu Cao</strong>,
+            <a href="https://sites.google.com/view/hiroaki-santo/">Hiroaki Santo</a>,
+            <a href="http://alumni.media.mit.edu/~shiboxin/">Boxin Shi</a>,
+            <a href="http://cvl.ist.osaka-u.ac.jp/user/okura/">Fumio Okura</a>,
+            <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>
+            <br>
+            <em>ECCV</em>, 2022
+            <br>
+            PDF
+            &nbsp|&nbsp
+            <a href="https://github.com/hoshino042/bilateral_normal_integration">code</a>
+            <p></p>
+            <p> Discontinuity preserving surface reconstruction from a single normal map, which works in orthographic and perspective cases, is robust to outliers, and only has one hyperparameter.</p>
+          </td>
 
           <tr onmouseout="input()" onmouseover="output()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -132,9 +170,9 @@
               <em>CVPR</em>, 2021
               <br>
               <a href="http://cvl.ist.osaka-u.ac.jp/wp-content/uploads/2021/03/cao_cvpr2021-1.pdf">PDF</a>
-              /
+              &nbsp|&nbsp
               <a href="https://www.youtube.com/watch?v=F1VTG4lUL2U">video</a>
-              /
+              &nbsp|&nbsp
               <a href="https://github.com/hoshino042/NormalIntegration">code</a>
               <p></p>
               <p> Plane fitting is useful for normal estimation; plane fitting is now useful for normal integration.</p>
@@ -171,9 +209,9 @@
                 <em>CVPR</em>, 2020
                 <br>
                 <a href="http://cvl.ist.osaka-u.ac.jp/wp-content/uploads/2020/04/cao2020stereoscopic.pdf">PDF</a>
-                /
+                &nbsp|&nbsp
                 <a href="https://www.youtube.com/watch?v=wRMTZ-2TeIo">video</a>
-                /
+                &nbsp|&nbsp
                 code
                 <p></p>
                 <p>Flashed stereo camera, recovered fine shapes.</p>
@@ -208,7 +246,7 @@
                   <em>WACV</em>, 2020
                   <br>
                   <a href="https://openaccess.thecvf.com/content_WACV_2020/papers/Cao_PSNet_A_Style_Transfer_Network_for_Point_Cloud_Stylization_on_WACV_2020_paper.pdf">PDF</a>
-                  /
+                  &nbsp|&nbsp
                   <a href="https://github.com/hoshino042/psnet">code</a>
                   <p></p>
                   <p>Learnt features from PointNet can stylize point clouds.</p>

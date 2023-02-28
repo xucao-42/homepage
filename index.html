@@ -58,7 +58,7 @@
          </table>
 
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<!--         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
              <tr>
                <td style="padding:10px;width:100%;vertical-align:middle;padding-left:20px">
                  <heading>Preprint</heading>
@@ -110,7 +110,7 @@
             <a href="https://www.youtube.com/watch?v=j5hw4tsWpoY">video</a>
             <p></p>
             <p> ECON is designed for full-body human digitization from a single-view color image and features robust performance on in-the-wild images with loose clothing or challenging poses.</p>
-          </td>
+          </td> -->
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
              <tr>
@@ -123,8 +123,94 @@
            </tbody>
          </table>
 
-
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="mvas_o()" onmouseover="mvas_i()" bgcolor="#ffffd0">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='mvas'><video  width=100% muted autoplay loop>
+                <source src="images/mvas_output.mp4" type='video/mp4'>
+                Your browser does not support the video tag.
+              </video></div>
+              <video  width=100% muted autoplay loop>
+                <source src="images/mvas_input.mp4" type='video/mp4'>
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <script type="text/javascript">
+                function mvas_i() {
+                  document.getElementById('mvas').style.opacity = "1";
+                }
+
+                function mvas_o() {
+                  document.getElementById('mvas').style.opacity = "0";
+                }
+                mvas_o()
+              </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Multi-View Azimuth Stereo via Tangent Space Consistency (MVAS via TSC)</papertitle>
+            <br>
+            <strong>Xu Cao</strong>,
+            <a href="https://sites.google.com/view/hiroaki-santo/">Hiroaki Santo</a>,
+            <a href="http://cvl.ist.osaka-u.ac.jp/user/okura/">Fumio Okura</a>,
+            <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>
+            <br>
+            To appear at <em>CVPR</em> 2023
+            <br>
+            <a>project page</a>
+            &nbsp|&nbsp
+            <a>arXiv</a>
+            &nbsp|&nbsp
+            <a>code</a>
+            &nbsp|&nbsp
+            <a>video</a>
+            <p></p>
+            <p> MVAS reconstructs the 3D shape purely from multi-view calibrated surface azimuth angle maps. TSC unites multi-view azimuth observations of a surface point in its tangent space and simultaneously determines the surface normal. TSC is invariant to a &pi; change in azimuth angles. Details will be available by the end of March. </p>
+          </td>
+
+          <tr onmouseout="econ_input()" onmouseover="econ_output()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='econ'><video  width=100% muted autoplay loop>
+                <source src="images/econ_output.mp4" type='video/mp4'>
+                Your browser does not support the video tag.
+              </video></div>
+              <img src='images/econ_input.jpg' width=100%>
+              </div>
+              <script type="text/javascript">
+                function econ_output() {
+                  document.getElementById('econ').style.opacity = "1";
+                }
+
+                function econ_input() {
+                  document.getElementById('econ').style.opacity = "0";
+                }
+                econ_input()
+              </script>
+            </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>ECON: Explicit Clothed humans Obtained from Normals</papertitle>
+            <br>
+            <a href="https://xiuyuliang.cn">Yuliang Xiu</a>,
+            <a href="https://is.mpg.de/~jyang">Jinlong Yang</a>,
+            <strong>Xu Cao</strong>,
+            <a href="https://ps.is.mpg.de/~dtzionas">Dimitrios Tzionas</a>,
+            <a href="https://ps.is.mpg.de/~black">Michael J. Black</a>
+            <br>
+            To appear at <em>CVPR</em> 2023
+            <br>
+            <a href="https://xiuyuliang.cn/econ/">project page</a>
+            &nbsp|&nbsp
+            <a href="https://arxiv.org/abs/2212.07422">arXiv</a>
+            &nbsp|&nbsp
+            <a href="https://github.com/yuliangxiu/ECON">code</a>
+            &nbsp|&nbsp
+            <a href="https://www.youtube.com/watch?v=j5hw4tsWpoY">video</a>
+            <p></p>
+            <p> ECON is designed for full-body human digitization from a single-view color image and features robust performance on in-the-wild images with loose clothing or challenging poses.</p>
+          </td>
 
         <tr onmouseout="eccv2022_o()" onmouseover="eccv2022_i()" bgcolor="#ffffd0">
           <td style="padding:20px;width:25%;vertical-align:middle">
@@ -147,7 +233,7 @@
               </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Bilateral Normal Integration</papertitle>
+            <papertitle>Bilateral Normal Integration (BiNI)</papertitle>
             <br>
             <strong>Xu Cao</strong>,
             <a href="https://sites.google.com/view/hiroaki-santo/">Hiroaki Santo</a>,
@@ -155,7 +241,7 @@
             <a href="http://cvl.ist.osaka-u.ac.jp/user/okura/">Fumio Okura</a>,
             <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>
             <br>
-            <em>ECCV</em>, 2022
+            <em>ECCV</em> 2022
             <br>
             <a href="https://drive.google.com/file/d/17eB96Yr40wouCacoLMpQdfXgQ5PEDgkT/view?usp=sharing">PDF</a>
             &nbsp|&nbsp
@@ -193,7 +279,7 @@
               <a href="http://cvl.ist.osaka-u.ac.jp/user/okura/">Fumio Okura</a>,
               <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>
               <br>
-              <em>IJCV</em>, 2022
+              <em>IJCV</em> 2022
               <br>
               <a href="https://rdcu.be/cKGfv">PDF</a>
               <p></p>
@@ -226,7 +312,7 @@
               <a href="http://cvl.ist.osaka-u.ac.jp/user/okura/">Fumio Okura</a>,
               <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>
               <br>
-              <em>CVPR</em>, 2021
+              <em>CVPR</em> 2021
               <br>
               <a href="http://cvl.ist.osaka-u.ac.jp/wp-content/uploads/2021/03/cao_cvpr2021-1.pdf">PDF</a>
               &nbsp|&nbsp
@@ -265,7 +351,7 @@
                 <a href="http://www.bozheng-lab.com">Bo Zheng</a>,
                 <a href="http://cvl.ist.osaka-u.ac.jp/en/member/matsushita/">Yasuyuki Matsushita</a>
                 <br>
-                <em>CVPR</em>, 2020
+                <em>CVPR</em> 2020
                 <br>
                 <a href="http://cvl.ist.osaka-u.ac.jp/wp-content/uploads/2020/04/cao2020stereoscopic.pdf">PDF</a>
                 &nbsp|&nbsp
@@ -302,7 +388,7 @@
                   <a href="http://www.nagao.nuie.nagoya-u.ac.jp/member/nagao_en.html">Katashi Nagao</a>,
                   Ryosuke Nakamura
                   <br>
-                  <em>WACV</em>, 2020
+                  <em>WACV</em> 2020
                   <br>
                   <a href="https://openaccess.thecvf.com/content_WACV_2020/papers/Cao_PSNet_A_Style_Transfer_Network_for_Point_Cloud_Stylization_on_WACV_2020_paper.pdf">PDF</a>
                   &nbsp|&nbsp

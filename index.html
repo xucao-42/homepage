@@ -98,8 +98,71 @@
            </tbody>
          </table>
 
-        
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+                <tr onmouseout="mvscps_input()" onmouseover="mvscps_output()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mvscps'><video  width=100% muted autoplay loop>
+                <source src="images/mvscps_relighting.mp4" type='video/mp4'>
+                Your browser does not support the video tag.
+              </video></div>
+            </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Neural Multi-View Self-Calibrated Photometric Stereo without Photometric Stereo Cues</papertitle>
+            <br>
+            <strong>Xu Cao</strong>,
+            <a href="https://taketomitakafumi.sakura.ne.jp/web/en/">Takafumi Taketomi</a>
+            <br>
+            <em>ICCV</em> 2025
+            <br>
+            <a href="https://arxiv.org/abs/2507.23162">arXiv</a>
+            &nbsp|&nbsp
+            <a href="https://github.com/CyberAgentAILab/MVSCPS">code (coming soon)</a>
+            &nbsp|&nbsp
+            <a href="https://huggingface.co/datasets/cyberagent/mvscps">data (coming soon)</a>
+            <p></p>
+            <p> Neural inverse rendering for joint recovery of shape, SVBRDF, and lighting from multi-view posed OLAT images via single-stage, end-to-end optimization. No light calibration or photometric stereo cues are required. </p>
+          </td>
+
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <tr onmouseout="pmni_input()" onmouseover="pmni_output()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='pmni'>
+                  <img src='images/pmni_output.png' width="100"></div>
+                <img src='images/pmni_input.png' width="120">
+              </div>
+              <script type="text/javascript">
+                function pmni_output() {
+                  document.getElementById('pmni').style.opacity = "1";
+                }
+
+                function pmni_input() {
+                  document.getElementById('pmni').style.opacity = "0";
+                }
+                input()
+              </script>
+            </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>PMNI: Pose-free Multi-view Normal Integration for Reflective and Textureless Surface Reconstruction</papertitle>
+            <br>
+            <a href="https://github.com/pmz-enterprise">Mingzhi Pei</a>,
+            <strong>Xu Cao</strong>,
+            <a>Xiangyi Wang</a>,
+            <a href="https://gh-home.github.io">Heng Guo</a>,
+            <a>Zhanyu Ma</a>
+            <br>
+            <em>CVPR</em> 2025
+            <br>
+            <a href="https://arxiv.org/abs/2504.08410">arXiv</a>
+            &nbsp|&nbsp
+            <a href="https://github.com/pmz-enterprise/PMNI">code</a>
+            <p></p>
+            <p> Pose-free SuperNormal. Joint recovery of shape and camera parameters from multi-view normal maps. </p>
+          </td>
 
         <tr onmouseout="sn_input()" onmouseover="sn_output()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -168,7 +231,7 @@
               </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Multi-View Azimuth Stereo via Tangent Space Consistency (MVAS via TSC)</papertitle>
+            <papertitle>Multi-View Azimuth Stereo via Tangent Space Consistency</papertitle>
             <br>
             <strong>Xu Cao</strong>,
             <a href="https://sites.google.com/view/hiroaki-santo/">Hiroaki Santo</a>,
@@ -255,7 +318,7 @@
               </script>
           </td>
           <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Bilateral Normal Integration (BiNI)</papertitle>
+            <papertitle>Bilateral Normal Integration</papertitle>
             <br>
             <strong>Xu Cao</strong>,
             <a href="https://sites.google.com/view/hiroaki-santo/">Hiroaki Santo</a>,
